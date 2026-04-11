@@ -1,5 +1,5 @@
 # ８人の預言者：静観の聖域 
-8 PROPHET WEB PROYECT
+8 PROPHETS WEB PROYECT
 
 > **「時間を止める静観。濁りのない真実を、ここに。」**
 
