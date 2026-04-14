@@ -1,3 +1,5 @@
+var is_loading = true;
+
 class FolderView extends Vista
 {
     constructor(tag)
