@@ -92,6 +92,12 @@ if(isDesktop())
         }
     }
     window.addEventListener('mousedown', (e) => {
+
+        if(is_loading)
+        {
+            return;
+        }
+        
         velocityX = 0;
         velocityY = 0;
 
@@ -107,6 +113,12 @@ if(isDesktop())
         document.body.style.cursor = 'grabbing';
     });
     window.addEventListener('mousemove', (e) => {
+
+        if(is_loading)
+        {
+            return;
+        }
+        
         if (!isDragging) return;
 
         // Calculamos la velocidad actual basándonos en el movimiento del frame anterior
@@ -124,6 +136,12 @@ if(isDesktop())
         });
     });
     window.addEventListener('mouseup', () => {
+
+        if(is_loading)
+        {
+            return;
+        }
+        
         isDragging = false;
         document.body.style.cursor = 'grab';
         
