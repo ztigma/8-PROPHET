@@ -32,6 +32,11 @@ class FolderView extends Vista
             })
         ;
 
+        document.body.set_childrens
+        ([
+            loading
+        ])
+
         while(seguirCargando)
         {
             let name = `${i}.jpg`;
