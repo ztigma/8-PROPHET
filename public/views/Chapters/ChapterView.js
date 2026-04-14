@@ -82,5 +82,7 @@ async function start (params)
     ])
 
     console.log('vista colocada');
+
+    is_loading = false;
 }
 start();
