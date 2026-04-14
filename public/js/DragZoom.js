@@ -6,6 +6,12 @@ if(isDesktop())
     const step = 40;
 
     window.addEventListener('keydown', (e) => {
+
+        if(is_loading)
+        {
+            return;
+        }
+        
         console.log('tecla')
         // 1. Detectamos la tecla
         if (e.key === 'ArrowUp') {
