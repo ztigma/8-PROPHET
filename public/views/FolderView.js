@@ -13,6 +13,25 @@ class FolderView extends Vista
         let i = 0;
         let seguirCargando = true;
 
+        /**
+         * @type {Element}
+         */
+        let loading = new Vista().w.set_childrens
+            ([
+                'L O A D I N G . . .'
+            ])
+            .set_styles
+            ({
+                position:'absolute'
+                ,
+                top:'50vh'
+                ,
+                left:'50vw'
+                ,
+                transform: 'translate(-50%, -50%)'
+            })
+        ;
+
         while(seguirCargando)
         {
             let name = `${i}.jpg`;
@@ -40,6 +59,9 @@ class FolderView extends Vista
             }
         }
         console.log(`i: ${i}`);
+
+        loading.remove();
+        
         return this.rutas;//???
     }
 }
