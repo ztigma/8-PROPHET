@@ -19,6 +19,17 @@ class Main extends Vista
             "font-weight":'bold'
         })
 
+        let tbg = new Vista('a').w
+        .set_childrens([`TBG (KWC)`])
+        .set_attrs
+        ({
+            href:'public/views/TBG/chapters.html?ch=1'
+        })
+        .set_styles
+        ({
+            color:'white'
+        })
+        
         let galeria = new Vista('a').w
         .set_childrens(['ギャラリー (ここをタップして作品をすべて見る！)'])
         .set_attrs
@@ -69,6 +80,8 @@ class Main extends Vista
         this.w.set_childrens
         ([
             titulo
+            ,
+            tbg
             ,
             galeria
             ,
